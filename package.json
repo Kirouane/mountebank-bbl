@@ -1,0 +1,14 @@
+{
+  "name": "bbl_mountebank",
+  "version": "1.0.0",
+  "description": "BBl mountebank",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "request": "2.81.0"
+  }
+}

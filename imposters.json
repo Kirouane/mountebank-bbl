@@ -1,0 +1,70 @@
+{
+    "imposters": [
+        {
+            "port": 4545,
+            "protocol": "http",
+            "stubs": [
+                {
+                    "predicates": [
+                        {
+                            "equals": {
+                                "method": "GET",
+                                "path": "/books/v1/volumes"
+                            }
+                        },
+                        {
+
+                            "deepEquals": {
+                                "query": { "q": "microservice" }
+                            }
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "is": {
+                                "body": {
+                                    "kind": "books#volumes",
+                                    "totalItems": 435,
+                                    "items": [
+                                        {
+                                            "kind": "books#volume",
+                                            "id": "WsxPDwAAQBAJ",
+                                            "etag": "ZSq0QrS5xmA",
+                                            "selfLink": "https://www.googleapis.com/books/v1/volumes/WsxPDwAAQBAJ",
+                                            "volumeInfo": {
+                                                "title": "Mastering Microservices with Java 9",
+                                                "subtitle": "Build domain-driven microservice-based applications with Spring, Spring Cloud, and Angular",
+                                                "authors": [
+                                                    "Sourabh Sharma"
+                                                ],
+                                                "publisher": "Packt Publishing Ltd",
+                                                "publishedDate": "2017-12-07",
+                                                "description": "Master the art of implementing scalable microservices in your production environment with ease About This Book Use domain-driven design to build microservices Use Spring Cloud to use Service Discovery and Registeration Use Kafka, Avro and Spring Streams for implementing event based microservices Who This Book Is For This book is for Java developers who are familiar with the microservices architecture and now wants to take a deeper dive into effectively implementing microservices at an enterprise level. A reasonable knowledge level and understanding of core microservice elements and applications is expected. What You Will Learn Use domain-driven design to design and implement microservices Secure microservices using Spring Security Learn to develop REST service development Deploy and test microservices Troubleshoot and debug the issues faced during development Learning best practices and common principals about microservices In Detail Microservices are the next big thing in designing scalable, easy-to-maintain applications. It not only makes app development easier, but also offers great flexibility to utilize various resources optimally. If you want to build an enterprise-ready implementation of the microservices architecture, then this is the book for you! Starting off by understanding the core concepts and framework, you will then focus on the high-level design of large software projects. You will gradually move on to setting up the development environment and configuring it before implementing continuous integration to deploy your microservice architecture. Using Spring security, you will secure microservices and test them effectively using REST Java clients and other tools like RxJava 2.0. We'll show you the best patterns, practices and common principals of microservice design and you'll learn to troubleshoot and debug the issues faced during development. We'll show you how to design and implement reactive microservices. Finally, we'll show you how to migrate a monolithic application to microservices based application. By the end of the book, you will know how to build smaller, lighter, and faster services that can be implemented easily in a production environment. Style and approach This book starts from the basics, including environment setup and provides easy-to-follow steps to implement the sample project using microservices."
+                                            }
+                                        },
+                                        {
+                                            "kind": "books#volume",
+                                            "id": "oyZKDwAAQBAJ",
+                                            "etag": "wum3u6pCtpA",
+                                            "selfLink": "https://www.googleapis.com/books/v1/volumes/oyZKDwAAQBAJ",
+                                            "volumeInfo": {
+                                                "title": "Microservice Patterns and Best Practices",
+                                                "subtitle": "Explore patterns like CQRS and event sourcing to create scalable, maintainable, and testable microservices",
+                                                "authors": [
+                                                    "Vinicius Feitosa Pacheco"
+                                                ],
+                                                "publisher": "Packt Publishing Ltd",
+                                                "publishedDate": "2018-01-31",
+                                                "description": "Explore the concepts and tools you need to discover the world of microservices with various design patterns Key Features Get to grips with the microservice architecture and build enterprise-ready microservice applications Learn design patterns and the best practices while building a microservice application Obtain hands-on techniques and tools to create high-performing microservices resilient to possible fails Book Description Microservices are a hot trend in the development world right now. Many enterprises have adopted this approach to achieve agility and the continuous delivery of applications to gain a competitive advantage. This book will take you through different design patterns at different stages of the microservice application development along with their best practices. Microservice Patterns and Best Practices starts with the learning of microservices key concepts and showing how to make the right choices while designing microservices. You will then move onto internal microservices application patterns, such as caching strategy, asynchronism, CQRS and event sourcing, circuit breaker, and bulkheads. As you progress, you'll learn the design patterns of microservices. The book will guide you on where to use the perfect design pattern at the application development stage and how to break monolithic application into microservices. You will also be taken through the best practices and patterns involved while testing, securing, and deploying your microservice application. At the end of the book, you will easily be able to create interoperable microservices, which are testable and prepared for optimum performance. What you will learn How to break monolithic application into microservices Implement caching strategies, CQRS and event sourcing, and circuit breaker patterns Incorporate different microservice design patterns, such as shared data, aggregator, proxy, and chained Utilize consolidate testing patterns such as integration, signature, and monkey tests Secure microservices with JWT, API gateway, and single sign on Deploy microservices with continuous integration or delivery, Blue-Green deployment Who this book is for This book is for architects and senior developers who would like implement microservice design patterns in their enterprise application development. The book assumes some prior programming knowledge."
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

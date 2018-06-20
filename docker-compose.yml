@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+    mountebank:
+      build:
+        context: .docker/mountebank
+      image: bbl:mountebank
+      ports:
+          - "2525:2525" #MB
+          - "4545:4545" #Google translate
+      volumes:
+          - "$PWD:/home/www"
+      working_dir: "/home/www"
+      networks:
+          - mb
+
+    app:
+      build:
+        context: .docker/app
+      image: bbl:app
+      ports:
+          - "8081:8081"
+      volumes:
+          - "$PWD:/home/www"
+      working_dir: "/home/www"
+      networks:
+          - mb
+
+networks:
+    mb:
+        driver: bridge
